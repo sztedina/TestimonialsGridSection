@@ -1,0 +1,193 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Barlow Semi Condensed", serif;
+    font-weight: 500;
+    color: hsl(0, 0%, 81%);
+    font-size: 11px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-align: left;
+    padding: 2em;
+    display: grid;
+    place-items: center;
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+}
+
+/* p {
+    overflow-wrap: break-word;
+} */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.attribution {
+    color: hsl(217, 19%, 35%);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 2em;
+    border-radius: 16px;
+    box-shadow: 2px 2px 10px hsl(217, 19%, 35%);
+}
+
+.title-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+img {
+    border-radius: 50%;
+}
+
+.personal-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+}
+.name {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.title {
+    font-size: 1rem;
+    opacity: 0.5;
+}
+
+.main-quotation {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+blockquote {
+    opacity: 0.7;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+
+#daniel-div {
+    background-color: hsl(251, 93%, 32%);
+    color: hsl(263, 55%, 52%);
+}
+
+#daniel-div img {
+    border: 2px solid hsl(263, 55%, 52%);
+}
+
+#daniel-div .main-quotation {
+    color: hsl(0, 0%, 100%);
+}
+
+#jonathan-div {
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 81%);
+}
+
+#jonathan-div img {
+    border: 2px solid hsl(0, 0%, 81%);
+}
+
+#jonathan-div .main-quotation {
+    color: hsl(0, 0%, 100%);
+}
+
+
+
+#jeanette-div {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(219, 29%, 14%);
+}
+
+#jeanette-div img {
+    border: 2px solid hsl(219, 29%, 14%);
+}
+
+#jeanette-div .main-quotation {
+    color: hsl(219, 29%, 14%);
+}
+
+
+
+#partick-div {
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 100%);
+}
+
+#partick-div img {
+    border: 2px solid hsl(0, 0%, 100%);
+}
+
+#partick-div .main-quotation {
+    color: hsl(0, 0%, 100%);
+}
+
+
+
+#kira-div {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(219, 29%, 14%);
+}
+
+#kira-div img {
+    border: 2px solid hsl(219, 29%, 14%);
+}
+
+#kira-div .main-quotation {
+    color: hsl(219, 29%, 14%);
+}
+
+
+@media (min-width: 878px) {
+    main {
+        display: grid;
+        grid-template-columns: 20px 1fr 1fr 1fr 1fr 20px;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        ". . . . . ."
+        ". dan dan john kira ."
+        ". dan dan john kira ."
+        ". jen pat pat kira ."
+        ". jen pat pat kira ."
+        ". . . . . .";
+        gap: 20px;
+    }
+
+    #daniel-div {
+        grid-area: dan;
+    }
+    #jonathan-div {
+        grid-area: john;
+    }
+    #jeanette-div {
+        grid-area: jen;
+    }
+    #partick-div {
+        grid-area: pat;
+    }
+    #kira-div {
+        grid-area: kira;
+    }
+
+    blockquote {
+        font-size: 0.8rem;
+    }
+}
