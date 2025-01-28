@@ -15,6 +15,7 @@ body {
     padding: 2em;
     display: grid;
     place-items: center;
+    height: 100svh;
 }
 
 img {
